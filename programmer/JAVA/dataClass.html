@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Blog</title>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Graphic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../highlight/styles/default.min.css">
+    <script src="../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+<!-- header -->
+<div class="banner">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../images/logo.png" class="img-responsive" alt=""/></a>
+            </div>
+            <div class="header-right">
+
+                <h1>以现在的努力程度之低，谈狗屁的未来，屎的梦想！！！</h1>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="head-nav">
+            <span class="menu"> </span>
+            <ul class="cl-effect-15">
+                <li><a href="../../index.html" data-hover="HOME">HOME</a></li>
+                <li class="active"><a href="../../programmer.html">programmer</a></li>
+                <li><a href="../../traffic.html" data-hover="traffic">traffic</a></li>
+                <li><a href="../../culture.html" data-hover="culture">culture</a></li>
+                <li><a href="../../others.html" data-hover="others">others</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+
+        <!-- script-for-nav -->
+        <script>
+            $("span.menu").click(function () {
+                $(".head-nav ul").slideToggle(300, function () {
+                    // Animation complete.
+                });
+            });
+        </script>
+        <!-- script-for-nav -->
+    </div>
+</div>
+<!-- header -->
+
+<!-- content -->
+<div class="content">
+    <div class="container">
+
+        <h1> Java中8种基本类型简介</h1>
+        <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
+        <h2> 一、8种基本类型简介</h2>
+        <p>byte：1个字节(byte)，8位(bit)，-128~127 最大存储数据量 255，默认值是(byte)0</p>
+        <p>boolean：1个字节(byte)，8位(bit)，true或者false，最大存储量 2，默认值是false</p>
+        <p>short：2个字节(byte)，16位(bit)，负的2的115次方~2的15次方-1，即-32768~32767 最大存储数据量 2的16次方，即65535，默认值是(short)0</p>
+        <p>char：2个字节(byte)，16位(bit)，存储Unicode编码，用‘’，默认值是‘\u0000’ (null)</p>
+        <p>int：4个字节(byte)，32位(bit)，负的2的31次方~2的31次方-1 最大存储数据量 2的31次方-1，最大存储数据量 2的32次方，默认值是0</p>
+        <p>long：8个字节(byte)，64位(bit)，负的2的64次方~2的63次方-1 最大存储数据量 2的63次方-1，最大存储数据量 2的64次方，默认值是0L</p>
+        <p>float：4个字节(byte)，32位(bit)，默认值是0.0f</p>
+        <p>double：8个字节(byte)，64位(bit)，默认值是0.0d</p>
+        <table class="table table-striped table-bordered">
+            <tr>
+                <th>类型</th>
+                <th>占用空间</th>
+                <th>范围</th>
+                <th>默认值</th>
+            </tr>
+            <tr>
+                <td>byte</td>
+                <td>1个字节(byte)，8位(bit)</td>
+                <td>-128~127 最大存储数据量 255</td>
+                <td>(byte)0</td>
+            </tr>
+            <tr>
+                <td>boolean</td>
+                <td>1个字节(byte)，8位(bit)</td>
+                <td>true或者false，最大存储量 2</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>short</td>
+                <td>2个字节(byte)，16位(bit)</td>
+                <td>负的2的115次方~2的15次方-1，即-32768~32767 最大存储数据量 2的16次方，即65535</td>
+                <td>(short)0</td>
+            </tr>
+            <tr>
+                <td>char</td>
+                <td>2个字节(byte)，16位(bit)</td>
+                <td>‘\u0000’~‘\uFFFF’</td>
+                <td>‘\u0000’ (null)</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>4个字节(byte)，32位(bit)</td>
+                <td>最大存储数据量 2的31次方-1，最大存储数据量 2的32次方</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>long</td>
+                <td>8个字节(byte)，64位(bit)</td>
+                <td>负的2的64次方~2的63次方-1 最大存储数据量 2的63次方-1</td>
+                <td>0L</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>4个字节(byte)，32位(bit)</td>
+                <td></td>
+                <td>0.0f</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>8个字节(byte)，64位(bit)</td>
+                <td></td>
+                <td>0.0d</td>
+            </tr>
+        </table>
+        <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
+        <h2>二、程序验证</h2>
+
+        <h3>2.1 工具</h3>
+
+        <P>lucene提供的专门用于计算堆内存占用大小的工具类：RamUsageEstimator</P>
+        maven坐标
+        <!--        <pre><code class="language-plaintext">-->
+        <pre><code class="language-xml">
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.lucene&lt;/groupId&gt;
+            &lt;artifactId&gt;lucene-core&lt;/artifactId&gt;
+            &lt;version&gt;4.0.0&lt;/version&gt;
+        &lt;/dependency&gt;
+        </code></pre>
+        <h3> 2.2 程序验证 </h3>
+        <pre><code class="language-java">
+        package utils.data;
+
+        import org.apache.lucene.util.RamUsageEstimator;
+
+        public class DataSize {
+
+        public static void print(long size0, long size8, long size16) {
+        System.out.println("数组定义部分占用的bytes：" + size0);
+        System.out.println("8个元素占用的bytes：" + size8);
+        System.out.println("16个元素占用的bytes：" + size16);
+        System.out.println("每个元素占用的bytes：" + ((size16 - size8) / 8.0));
+        }
+
+        public static void main(String[] args) {
+
+        System.out.println("\nbyte:");
+        byte byteData0[] = new byte[0];
+        byte byteData8[] = new byte[8];
+        byte byteData16[] = new byte[16];
+        byte byteData = byteData8[0];
+        System.out.println("每个元素的默认值：" + byteData);
+        print(RamUsageEstimator.sizeOf(byteData0), RamUsageEstimator.sizeOf(byteData8),
+        RamUsageEstimator.sizeOf(byteData16));
+        print(RamUsageEstimator.sizeOf(byteData0), RamUsageEstimator.sizeOf(byteData8),
+        RamUsageEstimator.sizeOf(byteData16));
+
+        System.out.println("\nboolean:");
+        boolean booleanData0[] = new boolean[0];
+        boolean booleanData8[] = new boolean[8];
+        boolean booleanData16[] = new boolean[16];
+        boolean booleanData = booleanData8[0];
+        System.out.println("每个元素的默认值：" + booleanData);
+        print(RamUsageEstimator.sizeOf(booleanData0), RamUsageEstimator.sizeOf(booleanData8),
+        RamUsageEstimator.sizeOf(booleanData16));
+
+        System.out.println("\nchar:");
+        char charData0[] = new char[0];
+        char charData8[] = new char[8];
+        char charData16[] = new char[16];
+        char charData = charData8[0];
+        System.out.println("每个元素的默认值：" + charData);
+        print(RamUsageEstimator.sizeOf(charData0), RamUsageEstimator.sizeOf(charData8),
+        RamUsageEstimator.sizeOf(charData16));
+
+        System.out.println("\nshort:");
+        short shortData0[] = new short[0];
+        short shortData8[] = new short[8];
+        short shortData16[] = new short[16];
+        short shortData = shortData8[0];
+        System.out.println("每个元素的默认值：" + shortData);
+        print(RamUsageEstimator.sizeOf(shortData0), RamUsageEstimator.sizeOf(shortData8),
+        RamUsageEstimator.sizeOf(shortData16));
+
+        System.out.println("\nint:");
+        int intData0[] = new int[0];
+        int intData8[] = new int[8];
+        int intData16[] = new int[16];
+        int intData = intData8[0];
+        System.out.println("每个元素的默认值：" + intData);
+        print(RamUsageEstimator.sizeOf(intData0), RamUsageEstimator.sizeOf(intData8),
+        RamUsageEstimator.sizeOf(intData16));
+
+        System.out.println("\nlong:");
+        long longData0[] = new long[0];
+        long longData8[] = new long[8];
+        long longData16[] = new long[16];
+        long longData = longData8[0];
+        System.out.println("每个元素的默认值：" + longData);
+        print(RamUsageEstimator.sizeOf(longData0), RamUsageEstimator.sizeOf(longData8),
+        RamUsageEstimator.sizeOf(longData16));
+
+        System.out.println("\nfloat:");
+        float floatData0[] = new float[0];
+        float floatData8[] = new float[8];
+        float floatData16[] = new float[16];
+        float floatData = floatData8[0];
+        System.out.println("每个元素的默认值：" + floatData);
+        print(RamUsageEstimator.sizeOf(floatData0), RamUsageEstimator.sizeOf(floatData8),
+        RamUsageEstimator.sizeOf(floatData16));
+
+        System.out.println("\ndouble:");
+        double doubleData0[] = new double[0];
+        double doubleData8[] = new double[8];
+        double doubleData16[] = new double[16];
+        double doubleData = doubleData8[0];
+        System.out.println("每个元素的默认值：" + doubleData);
+        print(RamUsageEstimator.sizeOf(doubleData0), RamUsageEstimator.sizeOf(doubleData8),
+        RamUsageEstimator.sizeOf(doubleData16));
+
+        // // 计算指定对象及其引用树上的所有对象的综合大小，单位byte
+        // System.out.println(RamUsageEstimator.sizeOf(doubleData));
+        // // 计算指定对象本身在堆空间的大小，单位byte
+        // System.out.println(RamUsageEstimator.shallowSizeOf(doubleData));
+        // // 计算指定对象及其引用树上的所有对象的综合大小，返回可读的结果，如：16 bytes
+        // System.out.println(RamUsageEstimator.humanSizeOf(doubleData));
+
+        }
+
+        }
+        </code></pre>
+
+        <h3>2.3 输出结果</h3>
+        <pre><code class="language-java">
+        byte:
+        每个元素的默认值：0
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：24
+        16个元素占用的bytes：32
+        每个元素占用的bytes：1.0
+
+        boolean:
+        每个元素的默认值：false
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：24
+        16个元素占用的bytes：32
+        每个元素占用的bytes：1.0
+
+        char:
+        每个元素的默认值：
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：32
+        16个元素占用的bytes：48
+        每个元素占用的bytes：2.0
+
+        short:
+        每个元素的默认值：0
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：32
+        16个元素占用的bytes：48
+        每个元素占用的bytes：2.0
+
+        int:
+        每个元素的默认值：0
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：48
+        16个元素占用的bytes：80
+        每个元素占用的bytes：4.0
+
+        long:
+        每个元素的默认值：0
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：80
+        16个元素占用的bytes：144
+        每个元素占用的bytes：8.0
+
+        float:
+        每个元素的默认值：0.0
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：48
+        16个元素占用的bytes：80
+        每个元素占用的bytes：4.0
+
+        double:
+        每个元素的默认值：0.0
+        数组定义部分占用的bytes：16
+        8个元素占用的bytes：80
+        16个元素占用的bytes：144
+        每个元素占用的bytes：8.0
+
+        </code></pre>
+        <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
+        <h2>三、 基本类型之间的转换</h2>
+
+        <p>1、将一种类型的值赋值给另一种类型是很常见的。</p>
+        <p>（1）boolean 类型与其他7中类型的数据都不能进行转换，这一点很明确。</p>
+        <p>（2）其他7种数据类型，它们之间都可以进行转换，只是可能会存在精度损失或其他一些变化。</p>
+        <p>2、转换分为自动转换和强制转换：</p>
+        <p>（1）自动转换（隐式）：无需任何操作。</p>
+        <p>（2）强制转换（显式）：需使用转换操作符（type）。</p>
+        <p>3、将6种数据类型按下面顺序排列一下：</p>
+        <p> double > float > long > int > short > byte</p>
+        <p> 如果从小转换到大，那么可以直接转换，而从大到小，或char 和其他6种数据类型转换，则必须使用强制转换</p>
+        <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
+        <h2>四、数据类型的初始化</h2>
+        <p>1、Java中的数据类型有两大类，一种是基本数据类型，另一种是引用数据类型。</p>
+        <p> 2、基本数据类型一共有8种，即前面说的8种。其余的为引用数据类型。</p>
+        <p>3、Java中的所有数据类型都需要通过声明和初始化，之后才可以被使用。</p>
+        <p>4、数据的声明。</p>
+        <p>（1）基本数据类型的声明，比如int a;boolean b;char c;float f;</p>
+        <p>（2）引用数据类型的声明，比如String name;int a[];Random random;Car car;</p>
+        <p> 5、基本类型声明以后，是不可以被使用的，否则会编译不通过。引用类型在声明后，可以直接使用其类变量（静态字段）；</p>
+        <p>6、数据的初始化，各种数据类型都会在栈空间中开辟一个属于该数据类型的控件。</p>
+        <p>（1）基本数据类型的初始化，可以用等号为其赋值一个常量即可，比如：a=5;b=true;c='a';f=1.2;这种方式是直接将值赋值到基本数据类型的栈空间中。</p>
+        <p>
+            （2）引用数据类型使用new关键字会在堆空间中申请一块地方并调用其构造函数进行初始化，之后将这个堆内存地址赋值到引用类型在栈中空间中。如果没有显式地为引用类型中的基本数据类型初始化，那么就会默认地对引用类型中的基本数据类型进行初始化，比如数组在new之后，数组元素都会被分配内存空间，赋初始值，具体见前文。</p>
+        <p>7、基本数据类型和引用类型的区别主要在于基本数据类型是分配在栈上的，而引用类型是分配在堆上的，基本类型和引用类型的内存模型本质上是不一样的。</p>
+        <p>8、双等号（==）和equals（）的区别：</p>
+        <p>（1）双等号是比较的是两个变量的在栈上的内容。</p>
+        <p> （2）equals（）方法是引用类型提供的比较其内容的方法。</p>
+        <p>（3）不论是基本数据类型还是引用类型，他们都会先在栈中分配一块内存，对于基本类型来说，这块区域包含的是基本类型的内容；而对于对象类型来说，这块区域包含的是指向真正内容的指针，真正的内容被分配在堆上。</p>
+        <p>（4）所以就会出现下面输出是false的情况：</p>
+        <pre><code class="language-java">
+        String string1 = new String("abc");
+        String string2 = new String("abc");
+        System.out.println("string1 == string2结果：" + (string1 == string2));
+        System.out.println("string1.equals(string2)结果："+string1.equals(string2));
+        </code></pre>
+        <p>输出：</p>
+        <p>string1 == string2结果：false</p>
+        <p>string1.equals(string2)结果：true</p>
+        <p>
+            9、特别的，加入是将用一个常量去初始化引用类型，比如String，那么会直接在堆中开辟出一个空间放这个常量，这是在用同样的常量去初始化另一个引用类型，则将会将这个常量在堆中的地址在此给了第二个引用类型，这时，在栈中的这两个引用类型就被赋予了同样的堆内存地址，双等号的结果就为true了。</p>
+        <pre><code class="language-java">
+        String string1 = "abc";
+        String string2 = "abc";
+        System.out.println("string1 == string2结果：" + (string1 == string2));
+        System.out.println("string1.equals(string2)结果：" + string1.equals(string2));
+        </code></pre>
+        <p>输出：</p>
+        <p>string1 == string2结果：true</p>
+        <p>string1.equals(string2)结果：true</p>
+        <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
+        <p><b>参考资料：</b></p>
+        <p>1、i_code日记的[Java 8大基本数据类型及其默认值](https://blog.csdn.net/m0_47569538/article/details/106289640)</p>
+        <p>2、狮少的[java获取某个对象占用的内存空间大小](https://blog.csdn.net/qq_30054961/article/details/100578821)</p>
+        <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
+        <p><b>另：一些说明</b></p>
+        <p>1、本博客<b>仅用于记录学习和交流</b>，欢迎大家瞧瞧看看，也感谢相关作者提供的内容。</p>
+        <p>2、如果原作者认为侵权，请及时联系我，我的qq是244509154，邮箱是244509154@qq.com，我会及时删除侵权文章。</p>
+        <p>3、我的文章大家如果觉得对您有帮助或者您喜欢，请您在转载的时候请<b>注明来源</b>，不管是我的还是其他原作者，我希望这些有用的文章的作者能被大家记住。</p>
+        <p>4、最后希望大家多多的交流，提高自己，从而对社会和自己创造更大的价值。</p>
+
+
+    </div>
+</div>
+<!-- content -->
+</body>
+</html>
