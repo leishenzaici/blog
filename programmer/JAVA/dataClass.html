@@ -60,14 +60,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </div>
 <!-- header -->
-
+<style>
+    .zlContents a:hover{
+        color: blue;
+    }
+</style>
 <!-- content -->
 <div class="content">
     <div class="container">
 
         <h1> Java中8种基本类型简介</h1>
         <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
-        <h2> 一、8种基本类型简介</h2>
+        <h2 style="color: black"><b>目录</b></h2>
+        <div class="zlContents">
+            <ul>
+                <li style="list-style-type: none"><a href="#ch01">一、8种基本类型简介</a></li>
+                <li style="list-style-type: none"><a href="#ch02">二、程序验证</a></li>
+                <ul>
+                    <li style="list-style-type: none"><a href="#ch0201">2.1 工具</a></li>
+                    <li style="list-style-type: none"><a href="#ch0201">2.2 程序验证</a></li>
+                    <li style="list-style-type: none"><a href="#ch0201">2.3 输出结果</a></li>
+                </ul>
+                <li style="list-style-type: none"><a href="#ch03">三、基本类型之间的转换</a></li>
+                <li style="list-style-type: none"><a href="#ch04">四、数据类型的初始化</a></li>
+            </ul>
+        </div>
+
+        <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
+        <h2 id="ch01"> 一、8种基本类型简介</h2>
         <p>byte：1个字节(byte)，8位(bit)，-128~127 最大存储数据量 255，默认值是(byte)0</p>
         <p>boolean：1个字节(byte)，8位(bit)，true或者false，最大存储量 2，默认值是false</p>
         <p>short：2个字节(byte)，16位(bit)，负的2的115次方~2的15次方-1，即-32768~32767 最大存储数据量 2的16次方，即65535，默认值是(short)0</p>
@@ -133,9 +153,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </tr>
         </table>
         <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
-        <h2>二、程序验证</h2>
+        <h2 id="ch02">二、程序验证</h2>
 
-        <h3>2.1 工具</h3>
+        <h3 id="ch0201">2.1 工具</h3>
 
         <P>lucene提供的专门用于计算堆内存占用大小的工具类：RamUsageEstimator</P>
         maven坐标
@@ -147,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             &lt;version&gt;4.0.0&lt;/version&gt;
         &lt;/dependency&gt;
         </code></pre>
-        <h3> 2.2 程序验证 </h3>
+        <h3 id="ch0202">2.2 程序验证</h3>
         <pre><code class="language-java">
         package utils.data;
 
@@ -250,7 +270,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
         </code></pre>
 
-        <h3>2.3 输出结果</h3>
+        <h3 id="ch0203">2.3 输出结果</h3>
         <pre><code class="language-java">
         byte:
         每个元素的默认值：0
@@ -310,7 +330,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         </code></pre>
         <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
-        <h2>三、 基本类型之间的转换</h2>
+        <h2 id="ch03">三、基本类型之间的转换</h2>
 
         <p>1、将一种类型的值赋值给另一种类型是很常见的。</p>
         <p>（1）boolean 类型与其他7中类型的数据都不能进行转换，这一点很明确。</p>
@@ -322,7 +342,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <p> double > float > long > int > short > byte</p>
         <p> 如果从小转换到大，那么可以直接转换，而从大到小，或char 和其他6种数据类型转换，则必须使用强制转换</p>
         <hr style="height:1px;border:none;border-top:1px dashed blue;"/>
-        <h2>四、数据类型的初始化</h2>
+        <h2 id="ch04">四、数据类型的初始化</h2>
         <p>1、Java中的数据类型有两大类，一种是基本数据类型，另一种是引用数据类型。</p>
         <p> 2、基本数据类型一共有8种，即前面说的8种。其余的为引用数据类型。</p>
         <p>3、Java中的所有数据类型都需要通过声明和初始化，之后才可以被使用。</p>
